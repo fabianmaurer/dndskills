@@ -1,0 +1,146 @@
+body{
+    font-family:Roboto;
+    font-size:18px;
+    color:#666;
+}
+
+.rank{
+    display:inline-block;
+    cursor:pointer;
+    margin-right:1px;
+    height:15px;
+    width:12px;
+    border-radius:1px;
+    border:2px solid transparent;
+}
+
+.rank.disabled{
+    background-color:#ddd;
+}
+
+.rank.forbidden{
+    background-color:#bbb;
+}
+
+.rank.forbidden:hover{
+    border-color:#f05050;
+}
+
+.rank.disabled:hover{
+    border-color:#27c24c;
+}
+
+.rank.enabled{
+    background-color:#27c24c;
+}
+
+.rank.bonus{
+    background-color:#5d9cec;
+}
+
+.rank.special{
+    border-color:#ff902b;
+}
+
+input[type="number"]{
+    width:42px;
+    font-size:18px;
+    border-radius:2px;
+    border:1px solid #ccc;
+    padding-left:4px;
+}
+
+#skills{
+    font-size:14px;
+}
+
+#tooltip{
+    position:absolute;
+    background:white;
+    box-shadow:0 0 7px rgba(0,0,0,0.4);
+    pointer-events:none;
+    padding:2px 6px;
+    border-radius:4px;
+}
+
+#usedranks{
+    position:fixed;
+    top:0;
+    right:0;
+    border-bottom-left-radius: 3px;
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    padding:2px 6px;
+    font-size:24px;
+}
+
+.strat{
+    display:inline-block;
+    transition:all 0.2s ease;
+    cursor:pointer;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition:all 0.2s ease;
+    width:40px;
+    color:white;
+}
+
+.strat.p100{
+    background-color:#f05050;
+    color:white;
+
+}
+
+.strat.p75{
+    background-color:#f532e5;
+    color:white;
+
+}
+
+.strat.p50{
+    background-color:#7266ba;
+    color:white;
+
+}
+
+.strat.p25{
+    background-color:#5d9cec;
+    color:white;
+}
+
+.strat.set{
+    background-color:white;
+    color:#666;
+}
+
+.strat.set:hover{
+    background:#eee;
+}
+
+td{
+    padding:0 4px;
+}
+
+.skillcount{
+    font-weight:bold;
+}
+
+#save{
+    position:fixed;
+    bottom:0;
+    right:0;
+    border-top-left-radius: 3px;
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    padding:4px 6px;
+    font-size:24px;
+    cursor:pointer;
+}
+
+#save:hover{
+    background-color:#eee;
+}
+
+#save i{
+    padding:0 6px;
+}
